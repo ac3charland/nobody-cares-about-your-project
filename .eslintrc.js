@@ -63,6 +63,12 @@ module.exports = {
             functions: 'never'
         }],
         'jsx-quotes': ['error', 'prefer-single'],
+        'react/jsx-tag-spacing': ['error', {
+            closingSlash: 'never',
+            beforeSelfClosing: 'always',
+            afterOpening: 'never',
+            beforeClosing: 'never'
+        }],
         'key-spacing': 'error',
         'no-console': ['error', {allow: ['warn', 'error']}],
         'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
