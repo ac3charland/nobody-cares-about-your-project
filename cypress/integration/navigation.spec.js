@@ -7,7 +7,7 @@ context('Page Navigation', () => {
         cy.server()
     })
 
-    it('navigates to proper pages with navbar links', () => {
+    it.skip('navigates to proper pages with navbar links', () => {
         cy.visit('/')
         cy.get(HomePage.wrapper)
         cy.compareSnapshot('home')
