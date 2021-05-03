@@ -72,26 +72,3 @@ a {
   border: 0;
 }
 
-.content-wrapper {
-  position: relative;
-  font-size: $font-size-normal;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.page-wrapper {
-  flex-grow: 2;
-  padding: 2rem 4rem;
-  margin: 0 auto;
-  width: 100%;
-  max-width: $content-width;
-  box-sizing: border-box;
-
-  @include small-screen {
-    padding: 1rem 2rem;
-  }
-}
