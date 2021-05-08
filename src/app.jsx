@@ -4,13 +4,14 @@ import {decrementSlideIndex, incrementSlideIndex} from './actions/slide'
 import {getCurrentSlide} from './utils/slides'
 import './app.scss'
 import Footer from './components/footer/footer'
-import {getCurrentSlideIndex} from './selectors/app'
+import {getCurrentSlideIndex, getCurrentColor} from './selectors/app'
 
 const cb = 'app'
 
 const App = () => {
     const dispatch = useDispatch()
     const slideIndex = useSelector(getCurrentSlideIndex)
+    const currentColor = useSelector(getCurrentColor)
 
     return (
         <React.StrictMode>
@@ -19,7 +20,7 @@ const App = () => {
                     <button onClick={() => dispatch(incrementSlideIndex())}>Increment</button>
                     <button onClick={() => dispatch(decrementSlideIndex())}>Decrement</button>
                 </div>
-                <div className={`${cb}__content-wrapper`}>
+                <div className={`${cb}__content-wrapper`} style={{backgroundColor: currentColor}}>
                     {getCurrentSlide(slideIndex)}
                 </div>
                 <Footer />

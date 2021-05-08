@@ -14,22 +14,41 @@ export const NAVBAR_HEIGHT = 5
 export const SLIDES = [
     {
         chapterIndex: 0,
-        component: <div style={{backgroundColor: 'red', height: '100%'}}>Red</div>,
+        component: <div>Red</div>,
     },
     {
         chapterIndex: 1,
-        component: <div style={{backgroundColor: 'blue', height: '100%'}}>Blue</div>,
+        component: <div>Blue</div>,
+    },
+    {
+        chapterIndex: 1,
+        component: <div>Purple</div>,
     },
     {
         chapterIndex: 2,
-        component: <div style={{backgroundColor: 'green', height: '100%'}}>green</div>,
+        component: <div>green</div>,
     },
 ]
 
 export const CHAPTERS = [
-    'Introduction', 
-    'Nobody Cares About Your Project',
-    'Make Good Stuff',
-    'Making Things People Didn\'t Know They Wanted',
-    'Conclusion',
+    {
+        title: 'Introduction',
+        color: 'red',
+    },
+    {
+        title: 'Nobody Cares About Your Project',
+        color: 'blue',
+    },
+    {
+        title: 'Make Good Stuff',
+        color: 'green',
+    },
+    {
+        title: 'Make Things People Didn\'t Know They Wanted',
+        color: 'purple',
+    },
+    {
+        title: 'Conclusion',
+        color: 'brown',
+    },
 ]

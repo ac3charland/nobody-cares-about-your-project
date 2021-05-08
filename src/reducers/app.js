@@ -1,10 +1,11 @@
 import {INCREMENT_SLIDE_INDEX, DECREMENT_SLIDE_INDEX} from '../utils/constants'
-import {getMaxIndex, getCurrentChapter} from '../utils/slides'
+import {getMaxIndex, getCurrentChapter, calculateChapterPercentWidths} from '../utils/slides'
 
 const initialState = {
     slideIndex: 0,
     chapterIndex: getCurrentChapter(0),
     maxIndex: getMaxIndex(),
+    chapterPercentWidths: calculateChapterPercentWidths(),
 }
 
 export function app(state = initialState, action = {}) {
